@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    container_name: api
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+      - escola_data:/app/data
+
+volumes:
+  escola_data:
